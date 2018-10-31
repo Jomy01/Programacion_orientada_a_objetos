@@ -7,6 +7,7 @@ public class Program
 		// declaración de personas (hay una clase Persona creada más abajo)
 		Persona persona1 = new Persona();
 		Persona persona2 = new Persona();
+		Persona persona3 = new Persona();
 		
 		//Inicializamos 
 		persona1.nombre = "Julio";
@@ -15,11 +16,13 @@ public class Program
 		//Operaciones
 		persona1.Saludar();
 		persona2.Saludar();
+		persona3.Saludar();
 	}
 }
 public class Persona
 {
-	public string nombre;
+	// le decimos que si no nos dan el nombre de alguna persona, utilice el nombre "Nadie". A la persona3 no le hemos dado nombre
+	public string nombre = "Nadie";
 
 	public void Saludar()
 	{
