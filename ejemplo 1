@@ -1,0 +1,28 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		// declaración de personas (hay una clase Persona creada más abajo)
+		Persona persona1 = new Persona();
+		Persona persona2 = new Persona();
+		
+		//Inicializamos 
+		persona1.nombre = "Julio";
+		persona2.nombre = "Natalia";
+		
+		//Operaciones
+		persona1.Saludar();
+		persona2.Saludar();
+	}
+}
+public class Persona
+{
+	public string nombre;
+
+	public void Saludar()
+	{
+		Console.WriteLine("Hola, me llamo " + nombre);
+	}
+}
